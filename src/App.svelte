@@ -9,7 +9,7 @@ const cities = Object.values(CITIES)
 <main>
   {#each cities as city}
   <div>
-    <h1>{city} 미세먼지 정보</h1>
+    <h1 class="">{city} 미세먼지 정보</h1>
 
     {#await getAirApi(city)}
       <p>Loading...</p>
@@ -29,4 +29,5 @@ const cities = Object.values(CITIES)
   {/each}
 </main>
 
-<style></style>
+<style lang="postcss">
+</style>
